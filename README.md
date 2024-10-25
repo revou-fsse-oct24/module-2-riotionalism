@@ -13,11 +13,13 @@ gratis dan berbayar
 
 ### 1. Gratis
 Kami percaya bahwa pendidikan adalah hak semua orang. Oleh karena itu, sebagian besar konten dasar di platform kami akan tersedia secara **gratis**. Pengguna bisa belajar tanpa dipungut biaya, mengakses video tutorial, artikel, latihan soal, dan materi-materi lainnya yang bermanfaat untuk membantu proses belajar
+
 ![belajar](./Assets/gambar%203.jpg)
 
 ### 2. Membership Berbayar
 Bagi mereka yang ingin mendalami lebih, kami menawarkan pembelajaran dengan akses fitur-fitur premium dengan opsi **membership berbayar**.
 Pengguna yang mendaftar membership akan mendapatkan akses eksklusif ke konten-konten lanjutan, kelas online dengan mentor, sertifikat penyelesaian, dan fitur interaktif seperti konsultasi personal dengan pengajar, ujian khusus, serta latihan intensif.
+
 ![membership](./Assets/membership.png)
 
 ### Keunggulan
@@ -28,6 +30,7 @@ Pengguna yang mendaftar membership akan mendapatkan akses eksklusif ke konten-ko
 
 ### Komentar dan Narahubung
 Pada Bagian Footer kami telah menyediakan kolom komentar dan narahubung agar tidak ketinggalan informasi.
+
 ![footer](./Assets/footer.png)
 
 #### TERIMA KASIH
