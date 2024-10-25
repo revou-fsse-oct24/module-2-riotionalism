@@ -27,6 +27,7 @@ Pengguna yang mendaftar membership akan mendapatkan akses eksklusif ke konten-ko
 |Tanpa Reward | Terdapat Reward Bulanan |
 
 ### Komentar dan Narahubung
-Pada Bagian Footer kami telah menyediakan kolom komentar dan narahubung agar tidak ketinggalan informasi
+Pada Bagian Footer kami telah menyediakan kolom komentar dan narahubung agar tidak ketinggalan informasi.
+![footer](./Assets/footer.png)
 
 #### TERIMA KASIH
