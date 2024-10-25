@@ -17,8 +17,8 @@ Kami percaya bahwa pendidikan adalah hak semua orang. Oleh karena itu, sebagian 
 
 ### 2. Membership Berbayar
 Bagi mereka yang ingin mendalami lebih, kami menawarkan pembelajaran dengan akses fitur-fitur premium dengan opsi **membership berbayar**.
-![membership](./Assets/membership.png)
 Pengguna yang mendaftar membership akan mendapatkan akses eksklusif ke konten-konten lanjutan, kelas online dengan mentor, sertifikat penyelesaian, dan fitur interaktif seperti konsultasi personal dengan pengajar, ujian khusus, serta latihan intensif.
+![membership](./Assets/membership.png)
 
 ### Keunggulan
 |Gratis|Membership|
