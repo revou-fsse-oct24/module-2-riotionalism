@@ -4,6 +4,10 @@
 
 </div>
 
+| ![Website](https://img.shields.io/badge/Website-4A90E2?logo=google-chrome&logoColor=white&style=for-the-badge) | [click here!](https://revou-fsse-oct24.github.io/module-1-riotionalism/) |
+| --- | ---- |
+
+
 <div align=justify>
 
 Kami berkeinginan untuk membangun sebuah platform pembelajaran berbasis website dengan memberi akses belajar untuk seluruh jenjang sekolah, baik sekolah dasar hingga sekolah menengah. Di platform ini, pengguna dapat menikmati berbagai materi, video, dan soal-soal pembelajaran.
