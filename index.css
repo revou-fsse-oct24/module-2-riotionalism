@@ -1,6 +1,6 @@
 /* Reset Style */
 * {
-    
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -99,7 +99,7 @@ hr {
     }
 }
 
-/* Logo Muter lagi */
+/* Logo Muter lagi Lah */
 @keyframes rotate {
     from {
         transform: rotate(0deg);
