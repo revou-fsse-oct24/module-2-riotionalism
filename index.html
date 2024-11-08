@@ -37,10 +37,16 @@
     <main>
         <p>KAMAR BELAJAR YO adalah platform pembelajaran online yang menawarkan berbagai materi pelajaran untuk siswa dari tingkat dasar hingga menengah. Dengan konten interaktif, video pembelajaran, dan latihan soal, kami membantu siswa belajar secara mandiri dan efektif.</p>
         <div class="visible-desktop">
-            <img class="image-body" src="body1.jpeg"/><br><br>
+            <picture>
+                <source srcset="body1.jpeg" media="(min-width: 768px)">
+                <img class="image-body" src="body1.jpeg" alt="Body image for desktop"/><br><br>
+            </picture>
         </div>
         <div class="visible-mobile">
-            <img class="image-body" src="body2.jpeg"/><br><br>
+            <picture>
+                <source srcset="body2.jpeg" media="(max-width: 767px)">
+                <img class="image-body" src="body2.jpeg" alt="Body image for mobile"/><br><br>
+            </picture>
         </div>
         <div class="lagu">
             <p><b>Putar lagu di bawah!</b></p>
@@ -78,7 +84,7 @@
     </main>
     <article>
         <h2>Keuntungan Belajar di Sini:</h2>
-        <ol>
+        <ol class="asymmetrical-grid">
             <li>Materi Belajar yang bermanfaat</li>
             <li>Teman Diskusi dan Belajar</li>
             <li>Pengalaman yang luar biasa</li>

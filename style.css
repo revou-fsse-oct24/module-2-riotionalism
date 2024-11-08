@@ -357,19 +357,61 @@ article ol {
 }
 
 /* li */
-article li {
-    background-color: #e1f5fe; /* BG biru muda seru kali ya? */
-    margin-bottom: 1rem; /* biar ada jarak nomor ke nomor */
-    padding: 0.5rem; /* ruang daleman */
-    border-left: 5px solid #039be5; /* Garis biru cerah */
-    border-radius: 5px; /* Sudut tumpul */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* hover */
+/* Container Grid Asimetris */
+.asymmetrical-grid {
+    display: grid; /* Menggunakan grid layout */
+    grid-template-columns: 1fr 2fr 1fr; /* Kolom pertama dan ketiga lebih kecil dari kolom tengah */
+    grid-template-rows: auto 1fr auto; /* Baris otomatis menyesuaikan konten */
+    gap: 20px; /* Jarak antar item */
+    padding: 10px;
+    list-style: none; /* Menghilangkan nomor default list */
 }
 
-/* Efek hover li */
-article li:hover {
-    background-color: #319ed1; /* Gelepin saat hover */
-    transform: scale(1.02); /* gedein dikit pas hover, kalo diubah jadi 1.5 kasian kegedean*/
+/* Styling untuk setiap item (li) */
+.asymmetrical-grid li {
+    background-color: #e1f5fe; /* BG biru muda */
+    padding: 1rem; /* Ruang dalam item */
+    border-left: 5px solid #039be5; /* Garis biru di kiri */
+    border-radius: 5px; /* Sudut tumpul */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek hover */
+}
+
+/* Efek hover */
+.asymmetrical-grid li:hover {
+    background-color: #319ed1; /* Mengubah warna latar belakang saat hover */
+    transform: scale(1.05); /* Membesarkan sedikit saat hover */
+}
+
+/* Menetapkan posisi asimetris untuk item */
+
+/* Item pertama */
+.asymmetrical-grid li:nth-child(1) {
+    grid-column: 1; /* Kolom pertama */
+    grid-row: 1; /* Baris pertama */
+}
+
+/* Item kedua */
+.asymmetrical-grid li:nth-child(2) {
+    grid-column: 2; /* Kolom kedua */
+    grid-row: 1 / span 2; /* Menempati dua baris secara vertikal */
+}
+
+/* Item ketiga (lebih besar dan menempati dua baris) */
+.asymmetrical-grid li:nth-child(3) {
+    grid-column: 3; /* Kolom ketiga */
+    grid-row: 1 / span 2; /* Menempati dua baris secara vertikal */
+}
+
+/* Item keempat */
+.asymmetrical-grid li:nth-child(4) {
+    grid-column: 1; /* Kolom pertama */
+    grid-row: 3; /* Baris ketiga */
+}
+
+/* Item kelima */
+.asymmetrical-grid li:nth-child(5) {
+    grid-column: 2; /* Kolom kedua */
+    grid-row: 3; /* Baris ketiga */
 }
 
 /* Responsif */
