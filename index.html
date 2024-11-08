@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAMAR BELAJAR YO</title>
-    <link rel="stylesheet" href="index.css">
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- LINK FONT -->
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo.png"/>
     <meta name="description" content="Website Kamar Belajar Yo">
     <meta name="author" content="Fytrio Amando"/>
@@ -17,23 +22,31 @@
 </head>
 <!-- INI BODY -->
 <body>
-    <header>
+    <header id="header-image">
         <img src="logo.png"/>
-        <h1>SELAMAT DATANG DI</h1>
-        <h1>KAMAR BELAJAR YO</h1>
+        <h1>Welcome to</h1>
+        <h1>Kamar Belajar Yo</h1>
         <hr/>
     </header>
-    <nav>
+    <nav class="responsive-text">
         <a href="Materi.html">Materi</a>
         <a href="video.html">Video Pembelajaran</a>
-        <a href="Bank Soal.html">Bank Soagitl</a>
+        <a href="Bank Soal.html">Bank Soal</a>
         <a href="Lainnya.html">Lainnya</a>
     </nav>
     <main>
-        <p>KAMAR BELAJAR adalah platform pembelajaran online yang menawarkan berbagai materi pelajaran untuk siswa dari tingkat dasar hingga menengah. Dengan konten interaktif, video pembelajaran, dan latihan soal, kami membantu siswa belajar secara mandiri dan efektif.</p>
-        <p><b>Putar lagu di bawah!</b></p>
-        <audio src="BUKAN BELAJAR GILA (1).mp3" controls></audio>
-        <h3> Jadwal Membership:</h3>
+        <p>KAMAR BELAJAR YO adalah platform pembelajaran online yang menawarkan berbagai materi pelajaran untuk siswa dari tingkat dasar hingga menengah. Dengan konten interaktif, video pembelajaran, dan latihan soal, kami membantu siswa belajar secara mandiri dan efektif.</p>
+        <div class="visible-desktop">
+            <img class="image-body" src="body1.jpeg"/><br><br>
+        </div>
+        <div class="visible-mobile">
+            <img class="image-body" src="body2.jpeg"/><br><br>
+        </div>
+        <div class="lagu">
+            <p><b>Putar lagu di bawah!</b></p>
+            <audio src="BUKAN BELAJAR GILA (1).mp3" controls></audio><br>
+        </div class="jadwal-membership">
+        <h3> Jadwal Membership:</h3><br>
         <dl>
             <dt><b>KAMIS</b></dt>
             <dd>Logika dan IPS</dd>
@@ -45,13 +58,13 @@
         </dl>
         <hr>
         <form>
-            <h3>DAFTAR MEMBERSHIP</h3>
+            <h3>Daftar Membership</h3>
             <label>Nama Lengkap:</label><br>
                 <input type="text" placeholder="Masukkan nama Anda"><br><br>
             <label>Email:</label><br>
                 <input type="text" placeholder="Masukkan email Anda"><br><br>
             <label>Asal Pulau:</label><br>
-                <select id="negara" name="negara">
+                <select id="Pulau" name="Pulau">
                 <option>Sumatera</option>
                 <option>Jawa</option>
                 <option>Kalimantan</option>
@@ -64,7 +77,7 @@
         <hr>
     </main>
     <article>
-        <h2>KEUNTUNGAN BELAJAR DI SINI:</h2>
+        <h2>Keuntungan Belajar di Sini:</h2>
         <ol>
             <li>Materi Belajar yang bermanfaat</li>
             <li>Teman Diskusi dan Belajar</li>
@@ -74,14 +87,14 @@
         </ol>
     </article>
     <section>
-        <hr/>
         <h3>DOKUMENTASI</h3>
+        <hr>
         <img src="gambar 2.jpg">
         <img src="gambar 3.jpg">
         <img src="gambar 4.jpg">
         <hr/>
         <form class="wide-form">
-            <label for="feedback">Kritik dan Saran:</label><br>
+            <label for="feedback">Kritik dan Saran:</label>
             <textarea id="feedback" placeholder="Tulis komentar di sini..." rows="4"></textarea><br><br>
             <input type="submit" value="Send">
         </form>
