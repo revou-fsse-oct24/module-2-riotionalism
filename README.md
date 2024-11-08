@@ -1,6 +1,6 @@
 <div align=center>
 
-# ✅ MODULE 2 ASSIHNMENT 1
+# ✅ MODULE 2 ASSIGNMENT 1
 
 </div>
 
