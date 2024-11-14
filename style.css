@@ -319,6 +319,7 @@ article {
 }
 
 /* KEUNTUNGAN BELAJAR DI SINI */
+/* Heading Artikel */
 article h2 {
     font-family: "Playwrite GB S", serif;
     font-weight: bold;
@@ -351,19 +352,28 @@ article h2::after {
 article ol {
     padding-left: 1.5rem;
     color: #424242;
-    list-style-position: inside; /* Memastikan bullet atau angka berada di dalam padding */
+    list-style-position: inside; /* Memastikan angka berada di dalam padding */
 }
 
 article ol li {
     margin-bottom: 0.5rem;
-    padding: 0.5rem 1rem; /* Memberikan padding internal */
+    padding: 0.5rem 1rem; /* Padding internal */
     background-color: #fbe9e7; /* Warna latar belakang */
     border-left: 5px solid #d32f2f; /* Garis warna merah di kiri */
-    border-radius: 4px;
+    border-radius: 4px; /* Sudut tumpul */
     font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Menghilangkan bullet bawaan jika menggunakan <ul> */
+/* Efek hover pada list item */
+article ol li:hover {
+    background-color: #e57373;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas saat hover */
+}
+
+/* Unordered List */
 article ul {
     padding-left: 1.5rem;
     list-style-position: inside;
@@ -375,46 +385,18 @@ article ul li {
     background-color: #e8f5e9; /* Warna hijau muda */
     border-left: 5px solid #388e3c; /* Garis hijau di kiri */
     border-radius: 4px;
-}
-
-/* Asymmetrical Grid */
-.asymmetrical-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
-    padding: 10px;
-    list-style: none; /* Menghilangkan list-style */
-}
-
-.asymmetrical-grid li {
-    background-color: #e1f5fe;
-    padding: 1rem;
-    border-left: 5px solid #039be5;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.asymmetrical-grid li:hover {
-    background-color: #319ed1;
-    transform: scale(1.05);
+article ul li:hover {
+    background-color: #81c784; /* Hijau lebih terang saat hover */
+    transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Grid Item Positioning */
-.asymmetrical-grid li:nth-child(1) { grid-column: 1; grid-row: 1; }
-.asymmetrical-grid li:nth-child(2) { grid-column: 2; grid-row: 1 / span 2; }
-.asymmetrical-grid li:nth-child(3) { grid-column: 3; grid-row: 1 / span 2; }
-.asymmetrical-grid li:nth-child(4) { grid-column: 1; grid-row: 3; }
-.asymmetrical-grid li:nth-child(5) { grid-column: 2; grid-row: 3; }
-
 /* Responsif untuk layar lebih kecil */
 @media (max-width: 768px) {
-    .asymmetrical-grid {
-        grid-template-columns: 1fr; /* Jadi satu kolom */
-    }
-
     article h2 {
         font-size: 1.8rem;
     }
@@ -440,12 +422,8 @@ article ul li {
         right: -20px;
     }
 
-    .asymmetrical-grid {
-        gap: 10px;
-    }
-
-    .asymmetrical-grid li {
-        padding: 0.8rem; /* Padding lebih kecil untuk grid item */
+    article ol li, article ul li {
+        padding: 0.4rem; /* Padding lebih kecil untuk kenyamanan di layar kecil */
         font-size: 0.9rem; /* Ukuran font lebih kecil */
     }
 }
@@ -469,25 +447,47 @@ section hr {
 
 /* Judul section styling */
 section h3 {
-    color: #ae8add; /* Warna un gu */
+    color: #ae8add; /* Warna ungu */
     font-size: 2rem; /* ukuran font*/
     margin-bottom: 1.5rem; /* Jarak bawah biar kangen */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Bayangan lucu untuk teks */
 }
 
 /* Styling untuk gambar */
-section img {
-    max-width: 100%; /* gambar responsif */
-    height: auto; /* rasio gambar */
-    border-radius: 8px; /* numpulin pojok gambar */
-    margin: 0.5rem; /* Jarak gambar ke gambar */
-    transition: transform 0.3s ease; /* hover */
+/* Container Galeri Asimetris */
+.asymmetrical-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom dengan ukuran yang sama */
+    gap: 1rem; /* Jarak antar gambar */
+    padding: 0 1rem; /* Padding horizontal untuk memberi jarak ke tepi */
+}
+
+/* Styling untuk gambar dalam galeri */
+.asymmetrical-gallery img {
+    width: 100%; /* Gambar responsif */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 8px; /* Sudut gambar tumpul */
+    object-fit: cover; /* Gambar terpotong dengan baik */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat hover */
 }
 
 /* Efek hover pada gambar */
-section img:hover {
-    transform: scale(1.05); /* gedein gambar pas hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* dalemin bayangan pas hover */
+.asymmetrical-gallery img:hover {
+    transform: scale(1.05); /* Membesarkan gambar sedikit saat hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Memberikan bayangan pada gambar */
+}
+
+/* Menambahkan efek asimetris */
+.asymmetrical-gallery img:nth-child(1) {
+    grid-column: span 2; /* Gambar pertama menempati dua kolom */
+    grid-row: span 2; /* Gambar pertama juga menempati dua baris */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .asymmetrical-gallery {
+        grid-template-columns: 1fr; /* Untuk perangkat dengan layar kecil, tampilkan gambar dalam satu kolom */
+    }
 }
 
 /* Formulir */
