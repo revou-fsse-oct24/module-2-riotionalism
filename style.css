@@ -320,7 +320,6 @@ article {
 
 /* KEUNTUNGAN BELAJAR DI SINI */
 /* Heading Artikel */
-/* Heading Artikel */
 article h2 {
     font-family: "Playwrite GB S", serif;
     font-weight: bold;
@@ -351,18 +350,18 @@ article h2::after {
 
 /* Ordered List */
 article ol {
-    padding-left: 2rem; /* Sesuaikan padding untuk list */
+    padding-left: 2rem; 
     color: #424242;
 }
 
 article ol li {
     margin-bottom: 0.5rem;
-    font-weight: bold; /* Agar teks lebih menonjol */
-    background-color: #fbe9e7; /* Warna latar belakang lembut */
-    padding: 0.5rem 1rem; /* Ruang dalam untuk tiap item */
-    border-left: 5px solid #d32f2f; /* Garis dekoratif */
+    font-weight: bold;
+    background-color: #fbe9e7;
+    padding: 0.5rem 1rem;
+    border-left: 5px solid #d32f2f;
     border-radius: 4px;
-    list-style-position: inside; /* Nomor berada di dalam blok item */
+    list-style-position: inside;
 }
 
 /* Asymmetrical Grid */
@@ -372,10 +371,9 @@ article ol li {
     grid-template-rows: auto 1fr auto;
     gap: 20px;
     padding: 10px;
-    list-style: none; /* Hapus nomor default untuk grid */
+    list-style: none;
 }
 
-/* Styling Item Grid */
 .asymmetrical-grid li {
     background-color: #e1f5fe;
     padding: 1rem;
@@ -398,24 +396,44 @@ article ol li {
 .asymmetrical-grid li:nth-child(4) { grid-column: 1; grid-row: 3; }
 .asymmetrical-grid li:nth-child(5) { grid-column: 2; grid-row: 3; }
 
-/* Responsif */
+/* Responsif untuk layar lebih kecil */
 @media (max-width: 768px) {
     .asymmetrical-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Jadi satu kolom */
     }
 
     article h2 {
         font-size: 1.8rem;
     }
+
+    article ol {
+        padding-left: 1.5rem; /* Kurangi padding */
+    }
+
+    article ol li {
+        font-size: 1rem; /* Ukuran teks lebih kecil */
+        padding: 0.4rem 0.8rem; /* Padding lebih kecil */
+    }
 }
 
 @media (max-width: 600px) {
     article h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Heading lebih kecil */
+    }
+
+    article h2::before, article h2::after {
+        font-size: 2rem; /* Ikon lebih kecil */
+        left: -20px; /* Sesuaikan jarak */
+        right: -20px;
     }
 
     .asymmetrical-grid {
         gap: 10px;
+    }
+
+    .asymmetrical-grid li {
+        padding: 0.8rem; /* Padding lebih kecil untuk grid item */
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
     }
 }
 
