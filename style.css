@@ -319,109 +319,103 @@ article {
 }
 
 /* KEUNTUNGAN BELAJAR DI SINI */
+/* Heading Artikel */
+/* Heading Artikel */
 article h2 {
     font-family: "Playwrite GB S", serif;
     font-weight: bold;
-    color: #d32f2f; /* Warna merah untuk judul */
-    font-size: 2rem; /* Ukuran font */
-    margin-bottom: 1.5rem; /* Jarak bawah */
-    text-align: center; /* Tengahin aja */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Bayangan lucu buat teks */
-    position: relative; /* Menambahkan posisi relatif untuk pseudo-element */
+    color: #d32f2f; /* Warna merah */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
-/* Pseudo-element kiri */
+/* Pseudo-element kiri dan kanan */
+article h2::before, article h2::after {
+    content: "❖";
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 article h2::before {
-    content: "❖"; /* Simbol dekoratif sebelum judul */
-    font-size: 2.5rem; /* Ukuran simbol */
-    position: absolute;
-    left: -20px; /* Jarak dari sisi kiri teks */
-    top: 50%;
-    transform: translateY(-50%); /* Menjaga simbol sejajar secara vertikal dengan teks */
+    left: -30px;
 }
 
-/* Pseudo-element kanan */
 article h2::after {
-    content: "❖"; /* Simbol dekoratif setelah judul */
-    font-size: 2.5rem; /* Ukuran simbol */
-    position: absolute;
-    right: -20px; /* Jarak dari sisi kanan teks */
-    top: 50%;
-    transform: translateY(-50%); /* Menjaga simbol sejajar secara vertikal dengan teks */
+    right: -30px;
 }
 
-/* ol */
+/* Ordered List */
 article ol {
-    padding-left: 1.5rem; /* jarak kiri */
-    color: #424242; /* Warna */
+    padding-left: 2rem; /* Sesuaikan padding untuk list */
+    color: #424242;
 }
 
-/* li */
-/* Container Grid Asimetris */
+article ol li {
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* Agar teks lebih menonjol */
+    background-color: #fbe9e7; /* Warna latar belakang lembut */
+    padding: 0.5rem 1rem; /* Ruang dalam untuk tiap item */
+    border-left: 5px solid #d32f2f; /* Garis dekoratif */
+    border-radius: 4px;
+    list-style-position: inside; /* Nomor berada di dalam blok item */
+}
+
+/* Asymmetrical Grid */
 .asymmetrical-grid {
-    display: grid; /* Menggunakan grid layout */
-    grid-template-columns: 1fr 2fr 1fr; /* Kolom pertama dan ketiga lebih kecil dari kolom tengah */
-    grid-template-rows: auto 1fr auto; /* Baris otomatis menyesuaikan konten */
-    gap: 20px; /* Jarak antar item */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
     padding: 10px;
-    list-style: none; /* Menghilangkan nomor default list */
+    list-style: none; /* Hapus nomor default untuk grid */
 }
 
-/* Styling untuk setiap item (li) */
+/* Styling Item Grid */
 .asymmetrical-grid li {
-    background-color: #e1f5fe; /* BG biru muda */
-    padding: 1rem; /* Ruang dalam item */
-    border-left: 5px solid #039be5; /* Garis biru di kiri */
-    border-radius: 5px; /* Sudut tumpul */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek hover */
+    background-color: #e1f5fe;
+    padding: 1rem;
+    border-left: 5px solid #039be5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Efek hover */
 .asymmetrical-grid li:hover {
-    background-color: #319ed1; /* Mengubah warna latar belakang saat hover */
-    transform: scale(1.05); /* Membesarkan sedikit saat hover */
+    background-color: #319ed1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Menetapkan posisi asimetris untuk item */
-
-/* Item pertama */
-.asymmetrical-grid li:nth-child(1) {
-    grid-column: 1; /* Kolom pertama */
-    grid-row: 1; /* Baris pertama */
-}
-
-/* Item kedua */
-.asymmetrical-grid li:nth-child(2) {
-    grid-column: 2; /* Kolom kedua */
-    grid-row: 1 / span 2; /* Menempati dua baris secara vertikal */
-}
-
-/* Item ketiga (lebih besar dan menempati dua baris) */
-.asymmetrical-grid li:nth-child(3) {
-    grid-column: 3; /* Kolom ketiga */
-    grid-row: 1 / span 2; /* Menempati dua baris secara vertikal */
-}
-
-/* Item keempat */
-.asymmetrical-grid li:nth-child(4) {
-    grid-column: 1; /* Kolom pertama */
-    grid-row: 3; /* Baris ketiga */
-}
-
-/* Item kelima */
-.asymmetrical-grid li:nth-child(5) {
-    grid-column: 2; /* Kolom kedua */
-    grid-row: 3; /* Baris ketiga */
-}
+/* Grid Item Positioning */
+.asymmetrical-grid li:nth-child(1) { grid-column: 1; grid-row: 1; }
+.asymmetrical-grid li:nth-child(2) { grid-column: 2; grid-row: 1 / span 2; }
+.asymmetrical-grid li:nth-child(3) { grid-column: 3; grid-row: 1 / span 2; }
+.asymmetrical-grid li:nth-child(4) { grid-column: 1; grid-row: 3; }
+.asymmetrical-grid li:nth-child(5) { grid-column: 2; grid-row: 3; }
 
 /* Responsif */
-@media (max-width: 600px) {
-    article {
-        padding: 1rem; /* Ruang daleman kalo layarnya kecil */
+@media (max-width: 768px) {
+    .asymmetrical-grid {
+        grid-template-columns: 1fr;
     }
 
     article h2 {
-        font-size: 1.5rem; /* ngecilin heading */
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    article h2 {
+        font-size: 1.5rem;
+    }
+
+    .asymmetrical-grid {
+        gap: 10px;
     }
 }
 
