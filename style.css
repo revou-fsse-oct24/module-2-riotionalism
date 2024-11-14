@@ -319,7 +319,6 @@ article {
 }
 
 /* KEUNTUNGAN BELAJAR DI SINI */
-/* Heading Artikel */
 article h2 {
     font-family: "Playwrite GB S", serif;
     font-weight: bold;
@@ -350,18 +349,32 @@ article h2::after {
 
 /* Ordered List */
 article ol {
-    padding-left: 2rem; 
+    padding-left: 1.5rem;
     color: #424242;
+    list-style-position: inside; /* Memastikan bullet atau angka berada di dalam padding */
 }
 
 article ol li {
     margin-bottom: 0.5rem;
-    font-weight: bold;
-    background-color: #fbe9e7;
-    padding: 0.5rem 1rem;
-    border-left: 5px solid #d32f2f;
+    padding: 0.5rem 1rem; /* Memberikan padding internal */
+    background-color: #fbe9e7; /* Warna latar belakang */
+    border-left: 5px solid #d32f2f; /* Garis warna merah di kiri */
     border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Menghilangkan bullet bawaan jika menggunakan <ul> */
+article ul {
+    padding-left: 1.5rem;
     list-style-position: inside;
+}
+
+article ul li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #e8f5e9; /* Warna hijau muda */
+    border-left: 5px solid #388e3c; /* Garis hijau di kiri */
+    border-radius: 4px;
 }
 
 /* Asymmetrical Grid */
@@ -371,7 +384,7 @@ article ol li {
     grid-template-rows: auto 1fr auto;
     gap: 20px;
     padding: 10px;
-    list-style: none;
+    list-style: none; /* Menghilangkan list-style */
 }
 
 .asymmetrical-grid li {
@@ -406,11 +419,11 @@ article ol li {
         font-size: 1.8rem;
     }
 
-    article ol {
-        padding-left: 1.5rem; /* Kurangi padding */
+    article ol, article ul {
+        padding-left: 1rem; /* Kurangi padding */
     }
 
-    article ol li {
+    article ol li, article ul li {
         font-size: 1rem; /* Ukuran teks lebih kecil */
         padding: 0.4rem 0.8rem; /* Padding lebih kecil */
     }
