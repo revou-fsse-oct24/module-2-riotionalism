@@ -10,16 +10,16 @@
 
 <div align=justify>
 
-# 1. Netlify Sign up process & connect Netlify to Github project 🎉
+# 💡 Netlify Sign up process & connect Netlify to Github project 🎉
 
 ## Buka Situs Netlify
 1. Kunjungi Netlify.
 2. Klik Tombol "Sign Up"
-Pilih opsi "Sign up with GitHub" untuk mengintegrasikan langsung dengan akun GitHub.
-Masuk menggunakan akun GitHub Anda dan berikan izin akses yang diminta oleh Netlify.
+Pilih opsi "Sign up with GitHub" untuk mengintegrasikan/menghubungkan langsung dengan akun GitHub.
+Masuk ke akun GitHub Anda dan berikan izin akses yang diminta oleh Netlify.
 
 3. Lengkapi Detail Akun
-Setelah login, isi informasi dasar yang diminta seperti nama tim dan preferensi lainnya.
+Setelah login, isi informasi yang diminta seperti nama tim dan preferensi lainnya.
 </div>
 
 <div align=justify>
@@ -54,7 +54,7 @@ Setelah selesai, situs Anda akan online dengan domain default dari Netlify.
 
 ## 💡BELI DOMAIN DI NIAGAHOSTER
 1. Beli domain di Niagahoster
-klik menu pada sidebar "miliki domain baru" yang akan otomatis mengarahkan pada pencarian domain custom yang anda inginkan.
+klik menu pada sidebar "miliki domain baru" yang untuk akan otomatis mengarahkan pada pencarian domain custom yang anda inginkan.
 ![logo](./Assets/README3.png)
 
 2. Lakukan Pembayaran
@@ -92,6 +92,8 @@ Kurang lebih 24 jam, custom website anda telah jadi.
 **about me:**
 </div>
 
+<div align="center">
+
 Platform|Username
 ---| ---|
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=for-the-badge) | [fytrioamando@gmail.com](mailto:fytrioamando@gmail.com) | 
@@ -101,7 +103,7 @@ Platform|Username
 ![Facebook](https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white&style=for-the-badge) | [Rio Amando](https://facebook.com/rio.amando5) |
 
 ---
-<div align="center">
+
 
 #### TERIMA KASIH BANYAK
 </div>
